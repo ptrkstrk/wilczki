@@ -75,8 +75,8 @@ with ZipFile(BytesIO(response)) as zipfile:
 write_logs(f'ACC_MAP: deleting metadata files...')
 for f in os.listdir(map_dir_name):
     if(f != 'acc_50k.tif'):
-        os.remove(f)
+        os.remove(map_dir_name + "/" + f)
 out_file_bytes = os.path.getsize(map_dir_name + "/acc_50k.tif")
 out_file_kbytes = out_file_bytes / 1000
-write_logs(f'ACC_MAP: extracted map file size is{out_file_kbytes:.2f} kB')
+write_logs(f'ACC_MAP: extracted map file size is {out_file_kbytes:.2f} kB')
 
