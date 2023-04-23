@@ -21,4 +21,4 @@ Wszystkie dane przenosimy do katalogu, który jest współdzielony z kontenerem 
 hdfs-store.sh <data_input_path> <data_output_path>
 ```
 - `<data_input_path>` - katalog, w którym są nasze dane
-- `<data_input_path> - katalog, który chcemy utworzyć w systemie hdfs i zapisać w nim nasze dane 
+- `<data_output_path>` - katalog, który chcemy utworzyć w systemie hdfs i zapisać w nim nasze dane 
